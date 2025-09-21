@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK GWA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>JK GWA Calculator</h1>
+        <div id="subjects-container">
+            <div class="subject-row">
+                <div class="input-group">
+                    <label for="subject-name-1">Subject Name:</label>
+                    <input type="text" id="subject-name-1" class="subject-name-input" placeholder="e.g., CCNA1">
+                </div>
+                <div class="input-group">
+                    <label for="grade-1">Grade:</label>
+                    <input type="number" id="grade-1" class="grade-input" placeholder="1.00 - 5.00" step="0.01" min="1.00" max="5.00">
+                </div>
+                <div class="input-group">
+                    <label for="units-1">Units:</label>
+                    <input type="number" id="units-1" class="units-input" placeholder="e.g., 3.0" step="0.5" min="1">
+                </div>
+            </div>
+        </div>
+        <button id="add-subject">Add Subject</button>
+        <button id="calculate-gwa">Calculate GWA</button>
+        <div id="results">
+            <h2 id="gwa-display"></h2>
+            <p id="status-display"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
